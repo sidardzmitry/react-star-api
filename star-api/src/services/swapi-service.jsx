@@ -33,17 +33,20 @@ export default class SwapiService {
       return res.results;
     };
   
-    getAllStarship(id) {
+    getStarship(id) {
       return this.getResource(`/starships/${id}/`);
     };
   
   }
   
-  const swapi = new SwapiService();
   
-  swapi.getAllPeople().then((people) => {
-    people.forEach((p) => {
-      console.log(p.name);
-    });
-  });
+
+
+  // const swapi = new SwapiService();
+  
+  // swapi.getAllPeople().then((people) => {
+  //   people.forEach((p) => {
+  //     console.log(p.name);
+  //   });
+  // });
   
