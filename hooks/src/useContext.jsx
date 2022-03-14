@@ -3,9 +3,10 @@ import MyContext from "./index";
 
 const Child = () => {
     const value = useContext(MyContext)
-
     return(
-        <p>{value}</p>
+        <div style={{backgroundColor:'red', padding: 10}}>
+            <p>{value}</p>
+        </div>
     )
 }
 

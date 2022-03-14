@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import HookSwitcher from "./useState";
 import Child from "./useContext";
 import HookEffect from "./useEffect";
 
 const MyContext = React.createContext();
-export default MyContext;
 
 const App = () => {
   return (
@@ -18,5 +17,8 @@ const App = () => {
     </div>
   );
 };
+
+export default MyContext;
+
 
 ReactDOM.render(<App />, document.getElementById("root"));
